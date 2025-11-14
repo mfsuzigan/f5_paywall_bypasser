@@ -3,6 +3,7 @@ function redirectPage() {
 
   if (isValid(aliasLocation)) {
     console.log(`Location is ${aliasLocation}, redirecting to paywall remover...`);
+    observer.disconnect();
     window.location.href = `https://isideload.com/?q=${aliasLocation}`;
   }
 }

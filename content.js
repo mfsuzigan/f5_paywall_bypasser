@@ -1,12 +1,9 @@
-console.log("Script running on:", location.href);
-
 function redirectPage() {
   const aliasLocation = document.querySelector(".c-tools-share__button.c-tools-share__button--copy-link")?.getAttribute("data-href");
 
   if (aliasLocation) {
-    console.log(`Location is ${aliasLocation}`);
-  } else {
-    console.log("No");
+    console.log(`Location is ${aliasLocation}, redirecting to paywall remover...`);
+    window.location.href = `https://isideload.com/?q=${aliasLocation}`;
   }
 }
 

@@ -1,0 +1,14 @@
+{
+  "name": "F5 Paywall Bypasser",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["tabs"],
+  "host_permissions": ["https://f5.folha.uol.com.br/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://f5.folha.uol.com.br/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
